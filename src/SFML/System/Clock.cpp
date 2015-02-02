@@ -60,4 +60,17 @@ Time Clock::restart()
     return elapsed;
 }
 
+std::string Clock::getDateTime(const char* _format)
+{
+    time_t	a = time(0);
+    tm		b;
+
+    localtime_s(&b, &a);
+
+    char buf[80];
+    std::strftime(buf, sizeof(buf), _format, &b);
+    return buf;
+}
+}
+
 } // namespace sf
