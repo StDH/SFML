@@ -81,7 +81,7 @@ public:
     /// \return Current system time
     ///
     ////////////////////////////////////////////////////////////
-    static std::string getTimeDate(const char* _format = "%d.%m.%Y - %H:%M:%S");
+    static std::string getDateTime(const char* _format = "%d.%m.%Y - %H:%M:%S");
 
 private:
 
