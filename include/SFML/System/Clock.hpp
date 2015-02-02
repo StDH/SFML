@@ -28,6 +28,7 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
+#include <ctime>
 #include <string>
 
 #include <SFML/System/Export.hpp>
@@ -78,7 +79,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Returns system time as string
     ///
-    /// \return Current system time
+    /// \return You can change the format of returned string
     ///
     ////////////////////////////////////////////////////////////
     static std::string getDateTime(const char* _format = "%d.%m.%Y - %H:%M:%S");
